@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.node.json",
+  "include": ["src/**/*"],
+  "exclude": [],
+  "compilerOptions": {
+    "jsx": "preserve",
+    "types": ["node", "vitest/importMeta"]
+  }
+}
