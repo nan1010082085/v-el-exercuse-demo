@@ -1,5 +1,6 @@
 /// <reference types="vitest" />
 import { defineComponent } from 'vue';
+import { RouterView } from 'vue-router';
 import { ElConfigProvider } from 'element-plus';
 
 const App = defineComponent({
@@ -8,7 +9,8 @@ const App = defineComponent({
     return () => {
       return (
         <ElConfigProvider namespace='bt'>
-          <router-view></router-view>
+          <div>app ---</div>
+          <RouterView />
         </ElConfigProvider>
       );
     };

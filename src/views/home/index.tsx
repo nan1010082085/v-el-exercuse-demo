@@ -8,7 +8,7 @@ const Home = defineComponent({
     return () => {
       return (
         <div class={styles['home-wrapper']}>
-          <ElButton>按钮</ElButton>
+          <ElButton type='primary'>按钮</ElButton>
         </div>
       );
     };

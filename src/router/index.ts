@@ -1,15 +1,21 @@
 import { createWebHashHistory, createRouter } from 'vue-router';
 
+const routes = [
+  {
+    path: '/',
+    redirect: '/home'
+  },
+  {
+    path: '/home',
+    name: 'Home',
+    component: () => import('@/views/home')
+  }
+];
+
 //创建路由
 const router = createRouter({
-  history: createWebHashHistory(),
-  routes: [
-    {
-      path: '/home',
-      name: 'Home',
-      component: () => import('@/views/home/index.tsx')
-    }
-  ]
+  history: createWebHashHistory(import.meta.env.BASE_URL),
+  routes
 });
 
 const { beforeEach } = router;
