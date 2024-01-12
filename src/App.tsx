@@ -6,13 +6,18 @@ const App = defineComponent({
   name: 'App',
   setup() {
     return () => {
-      return <ElConfigProvider namespace='bt'>app</ElConfigProvider>;
+      return (
+        <ElConfigProvider namespace='bt'>
+          <router-view></router-view>
+        </ElConfigProvider>
+      );
     };
   }
 });
 
 export default App;
 
+// vitest
 if (import.meta.vitest) {
   const a = 1 + 1;
   const { it, expect } = import.meta.vitest;
