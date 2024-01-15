@@ -3,12 +3,7 @@
   "compilerOptions": {
     "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
-    "noEmit": true,
-   
+    "noEmit": true
   },
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" },
-    { "path": "./tsconfig.vitest.json" }
-  ]
+  "references": [{ "path": "./tsconfig.node.json" }, { "path": "./tsconfig.app.json" }]
 }
